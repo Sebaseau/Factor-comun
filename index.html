@@ -1,4 +1,3 @@
-
 <!DOCTYPE html>
 <html lang="es">
 <head>
@@ -157,6 +156,28 @@ footer{background:var(--hero);color:#A9BCD0;padding:30px 0;font-size:14px}footer
   <dt>Coeficiente</dt><dd>El número que acompaña a la letra. En 4x², es el 4.</dd>
   <dt>Exponente</dt><dd>El numerito de arriba. En x², es el 2.</dd>
   <dt>Factor</dt><dd>Cada cosa que se multiplica. En 3(2x + 3), los factores son 3 y (2x + 3).</dd></dl></div>
+  <div class="card"><h3 style="margin-top:0">Definición formal</h3>
+    <p><b>Factorizar</b> un polinomio es expresarlo como un producto de dos o más factores. Un <b>factor común</b> es un monomio (o un polinomio) que divide exactamente a cada uno de los términos.</p>
+    <div class="formula">ab + ac = a(b + c)</div>
+    <p>Esta igualdad es la propiedad distributiva leída de derecha a izquierda: multiplicar y factorizar son operaciones inversas.</p>
+    <h3>Factor común monomio</h3>
+    <p>Se construye con dos partes:</p>
+    <ol class="p">
+      <li><b>Parte numérica:</b> el MCD de todos los coeficientes.</li>
+      <li><b>Parte literal:</b> solo las variables que aparecen en todos los términos, cada una con su exponente más pequeño.</li>
+    </ol>
+    <div class="flash">12x³y² + 18x²y: MCD(12, 18) = 6; x está en ambos (menor exponente 2); y está en ambos (menor exponente 1). Factor común: 6x²y. Resultado: 6x²y(2xy + 3).</div>
+    <h3>Factor común polinomio</h3>
+    <p>Cuando el factor que se repite es un paréntesis completo, se extrae igual que un monomio:</p>
+    <div class="formula">x(a + b) + y(a + b) = (a + b)(x + y)</div>
+    <h3>Observaciones importantes</h3>
+    <ol class="p">
+      <li>Si el primer término es negativo, conviene extraer el factor común con signo negativo; así el primer término dentro del paréntesis queda positivo.</li>
+      <li>Si un término es igual al factor común, dentro del paréntesis queda 1 (nunca 0).</li>
+      <li>La factorización está completa cuando dentro del paréntesis ya no hay ningún factor común distinto de 1.</li>
+      <li>Comprobación: al multiplicar el factor común por el paréntesis debes recuperar el polinomio original.</li>
+    </ol>
+  </div>
   <h3>Los 5 pasos</h3>
   <ol class="p">
     <li><b>Busca el MCD</b> de los números. En 6x + 9 es 3.</li>
@@ -199,9 +220,11 @@ footer{background:var(--hero);color:#A9BCD0;padding:30px 0;font-size:14px}footer
   <div class="nv">Nivel 2 · Varias operaciones</div>
   <details><summary>10x³ − 15x² + 5x<small>Factoriza</small></summary><ol><li>MCD de 10, 15 y 5 → 5</li><li>Menor exponente de x → 1</li><li>Factor común: 5x</li><li>10x³ ÷ 5x = 2x²</li><li>−15x² ÷ 5x = −3x</li><li>5x ÷ 5x = 1</li></ol><div class="res">5x(2x² − 3x + 1)</div></details>
   <details><summary>3x²y + 6xy²<small>Factoriza</small></summary><ol><li>MCD de 3 y 6 → 3</li><li>x y y están en ambos; menor exponente de cada una → 1</li><li>Factor común: 3xy</li><li>3x²y ÷ 3xy = x y 6xy² ÷ 3xy = 2y</li></ol><div class="res">3xy(x + 2y)</div></details>
+  <details><summary>Problema de texto: el rectángulo<small>Problema de aplicación</small></summary><ol><li>Un rectángulo tiene área 6x² + 9x y su ancho mide 3x. ¿Cuánto mide el largo?</li><li>Área = ancho × largo, así que factorizamos el área</li><li>MCD de 6 y 9 → 3 y menor exponente de x → 1, entonces el factor común es 3x</li><li>6x² ÷ 3x = 2x y 9x ÷ 3x = 3</li><li>Área = 3x(2x + 3): el ancho es 3x y el largo es lo que queda</li></ol><div class="res">El largo mide 2x + 3</div></details>
   <div class="nv">Nivel 3 · Casos especiales</div>
   <details><summary>−4x² − 8x<small>Cuando el primer término es negativo</small></summary><ol><li>Sacamos el factor con signo negativo: −4x</li><li>−4x² ÷ (−4x) = x</li><li>−8x ÷ (−4x) = 2</li></ol><div class="res">−4x(x + 2)</div></details>
   <details><summary>x(x + 3) + 2(x + 3)<small>El factor común es un paréntesis</small></summary><ol><li>El paréntesis (x + 3) se repite en los dos términos</li><li>Lo sacamos afuera</li><li>Lo que sobra: x y 2</li></ol><div class="res">(x + 3)(x + 2)</div></details>
+  <details><summary>2a(x − 1) − 3b(x − 1)<small>Factor común polinomio, con signo menos</small></summary><ol><li>El paréntesis (x − 1) está en los dos términos</li><li>Lo sacamos afuera como factor común</li><li>Lo que sobra: 2a del primero y −3b del segundo (el signo menos viaja con el 3b)</li></ol><div class="res">(x − 1)(2a − 3b)</div></details>
 </section>
 
 <!-- BLOQUE 7 -->
@@ -234,10 +257,6 @@ footer{background:var(--hero);color:#A9BCD0;padding:30px 0;font-size:14px}footer
   <h2 style="color:#fff;font-size:24px">Para llevarte</h2>
   <div class="dl">
     <button class="btn" onclick="window.print()">Guardar esta guía en PDF (imprimir)</button>
-  </div>
-  <div class="nav2">
-    <a href="#inicio">‹ Tema anterior: Propiedad distributiva</a>
-    <a href="#inicio">Tema siguiente: Factor común por agrupación ›</a>
   </div>
   <p style="margin-top:22px"><strong style="color:#fff">Unidad Educativa Guayaquil</strong> · Guía de Matemáticas · ¿Dudas? Pregunta a tu docente.</p>
   <p class="firma">Creado por Sebastian Anilema</p>
